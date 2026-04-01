@@ -34,63 +34,86 @@ export default function Architecture() {
 
             {/* Bottom Layer - Blockchain */}
             <g>
-              <polygon points="150,450 400,550 650,450 400,350" fill="url(#bottomGradient)" stroke="rgba(109, 40, 217, 0.5)" strokeWidth="2" />
-              <text x="400" y="475" textAnchor="middle" className="fill-purple-300 text-lg font-semibold" dy="0.3em">
+              <polygon
+                points="150,450 400,550 650,450 400,350"
+                fill="url(#bottomGradient)"
+                stroke="rgba(109, 40, 217, 0.5)"
+                strokeWidth="2"
+              />
+
+              {/* Main Title */}
+              <text
+                x="400"
+                y="440"
+                textAnchor="middle"
+                className="fill-purple-300 text-lg font-semibold"
+                dy="0.3em"
+                transform="rotate(0 400 440)"
+              >
                 Blockchain Layer
               </text>
-              <text x="400" y="510" textAnchor="middle" className="fill-purple-200 text-sm opacity-75" dy="0.3em">
+
+              {/* Subtitle */}
+              <text
+                x="400"
+                y="470"
+                textAnchor="middle"
+                className="fill-purple-200 text-sm opacity-75"
+                dy="0.3em"
+                transform="rotate(0 400 470)"
+              >
                 Ethereum, Polygon, Arbitrum
               </text>
             </g>
 
-            {/* Connecting lines */}
-            <line x1="250" y1="350" x2="200" y2="250" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="2" strokeDasharray="5,5" />
-            <line x1="400" y1="350" x2="400" y2="250" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="2" strokeDasharray="5,5" />
-            <line x1="550" y1="350" x2="600" y2="250" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="2" strokeDasharray="5,5" />
+            {/* Connecting lines (Middle → Top) */}
+            <line x1="175" y1="200" x2="100" y2="80" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="2" strokeDasharray="5,5" />
+            <line x1="375" y1="200" x2="350" y2="80" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="2" strokeDasharray="5,5" />
+            <line x1="575" y1="200" x2="600" y2="80" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="2" strokeDasharray="5,5" />
 
             {/* Middle Layer - APIs & Smart Contracts */}
             <g>
               {/* Left box */}
               <polygon points="100,250 250,300 250,200 100,150" fill="url(#middleGradient)" stroke="rgba(139, 92, 246, 0.5)" strokeWidth="2" />
-              <text x="175" y="225" textAnchor="middle" className="fill-purple-200 text-sm font-semibold" dy="0.3em">
+              <text x="175" y="225" textAnchor="middle" className="fill-purple-200 text-sm font-semibold" dy="0.3em" transform="rotate(20 175 225)">
                 APIs
               </text>
 
               {/* Center box */}
               <polygon points="300,250 450,300 450,200 300,150" fill="url(#middleGradient)" stroke="rgba(139, 92, 246, 0.5)" strokeWidth="2" />
-              <text x="375" y="225" textAnchor="middle" className="fill-purple-200 text-sm font-semibold" dy="0.3em">
+              <text x="375" y="225" textAnchor="middle" className="fill-purple-200 text-sm font-semibold" dy="0.3em" transform="rotate(20 375 225)">
                 Smart Contracts
               </text>
 
               {/* Right box */}
               <polygon points="500,250 650,300 650,200 500,150" fill="url(#middleGradient)" stroke="rgba(139, 92, 246, 0.5)" strokeWidth="2" />
-              <text x="575" y="225" textAnchor="middle" className="fill-purple-200 text-sm font-semibold" dy="0.3em">
+              <text x="575" y="225" textAnchor="middle" className="fill-purple-200 text-sm font-semibold" dy="0.3em" transform="rotate(20 575 225)">
                 Validators
               </text>
             </g>
 
-            {/* Connecting lines to top */}
-            <line x1="175" y1="150" x2="150" y2="80" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="2" strokeDasharray="5,5" />
-            <line x1="375" y1="150" x2="400" y2="80" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="2" strokeDasharray="5,5" />
-            <line x1="575" y1="150" x2="650" y2="80" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="2" strokeDasharray="5,5" />
+            {/* Connecting lines (Bottom → Middle) */}
+            <line x1="250" y1="450" x2="175" y2="250" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="2" strokeDasharray="5,5" />
+            <line x1="400" y1="450" x2="375" y2="250" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="2" strokeDasharray="5,5" />
+            <line x1="550" y1="450" x2="575" y2="250" stroke="rgba(168, 85, 247, 0.3)" strokeWidth="2" strokeDasharray="5,5" />
 
             {/* Top Layer - Applications */}
             <g>
               {/* Left app box */}
               <polygon points="50,80 150,120 150,40 50,0" fill="url(#topGradient)" stroke="rgba(168, 85, 247, 0.6)" strokeWidth="2" />
-              <text x="100" y="60" textAnchor="middle" className="fill-purple-100 text-xs font-semibold" dy="0.3em">
+              <text x="100" y="60" textAnchor="middle" className="fill-purple-100 text-xs font-semibold" dy="0.3em" transform="rotate(20 100 60)">
                 Dashboard
               </text>
 
               {/* Center app box */}
               <polygon points="300,80 400,120 400,40 300,0" fill="url(#topGradient)" stroke="rgba(168, 85, 247, 0.6)" strokeWidth="2" />
-              <text x="350" y="60" textAnchor="middle" className="fill-purple-100 text-xs font-semibold" dy="0.3em">
+              <text x="350" y="60" textAnchor="middle" className="fill-purple-100 text-xs font-semibold" dy="0.3em" transform="rotate(20 350 60)">
                 Bidding
               </text>
 
               {/* Right app box */}
               <polygon points="550,80 650,120 650,40 550,0" fill="url(#topGradient)" stroke="rgba(168, 85, 247, 0.6)" strokeWidth="2" />
-              <text x="600" y="60" textAnchor="middle" className="fill-purple-100 text-xs font-semibold" dy="0.3em">
+              <text x="600" y="60" textAnchor="middle" className="fill-purple-100 text-xs font-semibold" dy="0.3em" transform="rotate(20 600 60)">
                 Reputation
               </text>
             </g>

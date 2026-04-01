@@ -5,7 +5,7 @@ export default function PricingSection() {
     {
       name: 'Testnet Plan',
       price: '₹999',
-      period: '/month',
+      period: '/ year',
       description: 'Perfect for testing and development',
       features: [
         'Runs on Sepolia Testnet',
@@ -19,7 +19,7 @@ export default function PricingSection() {
     {
       name: 'Growth Plan',
       price: '₹14,999',
-      period: '/month',
+      period: '/ year',
       description: 'For production organizations',
       features: [
         'Runs on Polygon / Arbitrum',
@@ -34,7 +34,7 @@ export default function PricingSection() {
     {
       name: 'Enterprise Plan',
       price: '₹49,999+',
-      period: '/month',
+      period: '/ year',
       description: 'For mission-critical systems',
       features: [
         'Runs on Ethereum Mainnet',
@@ -63,19 +63,17 @@ export default function PricingSection() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative group rounded-2xl transition-all duration-300 ${
-                plan.featured
-                  ? 'md:scale-105 ring-2 ring-purple-500/50'
-                  : ''
-              }`}
+              className={`relative group rounded-2xl transition-all duration-300 ${plan.featured
+                ? 'md:scale-105 ring-2 ring-purple-500/50'
+                : ''
+                }`}
             >
               {/* Card background */}
               <div
-                className={`relative p-8 rounded-2xl h-full flex flex-col ${
-                  plan.featured
-                    ? 'bg-gradient-to-br from-purple-500/20 via-purple-900/30 to-gray-900/20 border border-purple-400/40'
-                    : 'bg-gradient-to-br from-purple-500/10 via-gray-900/40 to-purple-900/10 border border-purple-500/20 hover:border-purple-400/40'
-                }`}
+                className={`relative p-8 rounded-2xl h-full flex flex-col ${plan.featured
+                  ? 'bg-gradient-to-br from-purple-500/20 via-purple-900/30 to-gray-900/20 border border-purple-400/40'
+                  : 'bg-gradient-to-br from-purple-500/10 via-gray-900/40 to-purple-900/10 border border-purple-500/20 hover:border-purple-400/40'
+                  }`}
               >
                 {/* Badge */}
                 {plan.badge && (
@@ -129,11 +127,10 @@ export default function PricingSection() {
 
                 {/* CTA Button */}
                 <button
-                  className={`w-full py-3 px-6 font-semibold rounded-lg transition-all duration-300 ${
-                    plan.featured
-                      ? 'bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white hover:shadow-lg hover:shadow-purple-500/50'
-                      : 'border-2 border-purple-500/30 text-purple-300 hover:border-purple-400/60 hover:bg-purple-500/10'
-                  }`}
+                  className={`w-full py-3 px-6 font-semibold rounded-lg transition-all duration-300 ${plan.featured
+                    ? 'bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white hover:shadow-lg hover:shadow-purple-500/50'
+                    : 'border-2 border-purple-500/30 text-purple-300 hover:border-purple-400/60 hover:bg-purple-500/10'
+                    }`}
                 >
                   {plan.cta}
                 </button>
@@ -142,7 +139,7 @@ export default function PricingSection() {
           ))}
         </div>
 
-        {/* Trust section */}
+        {/* Trust section
         <div className="mt-20 grid md:grid-cols-3 gap-8 text-center">
           <div className="p-6">
             <div className="text-4xl mb-3">🔐</div>
@@ -159,7 +156,7 @@ export default function PricingSection() {
             <h4 className="text-white font-semibold mb-2">Scalable Architecture</h4>
             <p className="text-gray-400">Engineered to handle millions of transactions</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )

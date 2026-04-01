@@ -28,14 +28,17 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl md:text-2xl text-gray-400 mb-8 leading-relaxed max-w-2xl mx-auto">
-          YARLabs enables organizations to run transparent, tamper-proof reputation and bidding systems on blockchain.
+          <span className="text-purple-400 font-semibold animate-pulse">
+            YARLabs
+          </span>{" "}
+          enables organizations to run transparent, tamper-proof reputation and bidding systems on blockchain.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button className="px-8 py-4 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50 transform hover:scale-105">
+          <button onClick={() => window.open("https://yarcoin.vercel.app/", "_blank")} className="px-8 py-4 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50 transform hover:scale-105">
             Book a Demo
           </button>
-          <button className="px-8 py-4 border-2 border-purple-500 text-purple-300 hover:text-purple-200 font-semibold rounded-xl transition-all duration-300 hover:bg-purple-500/10">
+          <button onClick={() => window.open("https://yarcoin.vercel.app/", "_blank")} className="px-8 py-4 border-2 border-purple-500 text-purple-300 hover:text-purple-200 font-semibold rounded-xl transition-all duration-300 hover:bg-purple-500/10">
             Explore Platform
           </button>
         </div>

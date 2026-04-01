@@ -9,7 +9,10 @@ export default function DemoEmbed() {
             See It In Action
           </h2>
           <p className="text-xl text-gray-400">
-            Experience the YARLabs platform with our live demo
+            Experience the <span className="text-purple-400 font-semibold animate-pulse">
+              YARLabs
+            </span>{" "}
+            platform with our live demo
           </p>
         </div>
 
@@ -52,7 +55,7 @@ export default function DemoEmbed() {
           <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
             Ready to explore more? Start with your own instance or connect with our team to discuss your specific use case.
           </p>
-          <button className="px-8 py-4 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50 transform hover:scale-105">
+          <button onClick={() => window.open("https://yarcoin.vercel.app/", "_blank")} className="px-8 py-4 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50 transform hover:scale-105">
             Launch Your Demo
           </button>
         </div>

@@ -10,7 +10,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">YARLabs</h3>
+            <h3 className="text-2xl font-bold text-white mb-4"><span className="text-purple-400 font-semibold animate-pulse">
+              YARLabs
+            </span>{" "}</h3>
             <p className="text-gray-400 text-sm">
               Building transparent, tamper-proof reputation systems.
             </p>
