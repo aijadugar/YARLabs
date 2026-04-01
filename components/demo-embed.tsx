@@ -34,13 +34,22 @@ export default function DemoEmbed() {
               </div>
 
               {/* Embedded demo */}
-              <div className="relative w-full h-[600px] bg-gray-950">
-                <iframe
-                  src="https://yarcoin.vercel.app/"
-                  className="w-full h-full border-none"
-                  title="YARLabs Demo"
-                  allow="clipboard-write"
-                />
+              <div className="relative w-full h-[600px] overflow-hidden bg-gray-950">
+                <div
+                  className="absolute top-0 left-0 w-full h-full"
+                  style={{
+                    transform: "scale(0.87)",
+                    transformOrigin: "top left",
+                    width: "117.6%",
+                    height: "117.6%",
+                  }}
+                >
+                  <iframe
+                    src="https://yarcoin.vercel.app/"
+                    className="w-full h-full border-none"
+                    title="YARLabs Demo"
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -7,25 +7,25 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'YARLabs - Blockchain Reputation & Bidding Systems',
-  description: 'Build transparent, tamper-proof reputation and bidding systems on blockchain with YARLabs. Enterprise-grade Web3 infrastructure for modern organizations.',
+  title: 'Empower through blockchain, on YARLabs',
+  description: 'Build transparent, tamper-proof solutions on blockchain with YARLabs. Enterprise-grade Web3 infrastructure for modern organizations.',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/yarc.jpg',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/yarc.jpg',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/yarc.jpg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/yarc.jpg',
   },
 }
 
